@@ -1,0 +1,235 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(10px); 
+    z-index: -1; 
+}
+
+body {
+    font-family: "Rakkas", serif;
+    background: url(../img/background.jpg) center center fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+        		h1 {
+        			font-family: "Rakkas", serif;
+        			color: #C02620;
+        			font-size: 96px;
+        			margin-bottom: 25px;
+
+					text-shadow: 0px 0px 27.8px rgba(255, 0, 0, 0.6);
+
+        		}
+
+        		p {
+        			font-size: 24px;
+        			margin-bottom: 30px;
+        		}
+
+        		section{
+        			display: flex;
+        			flex-direction: column;
+        			align-items: center;
+        			margin-top: 200px;
+
+        		}
+
+        		.content {
+        			display: flex;
+        			flex-direction: row;
+        			max-width: 1200px;
+        		}
+
+        		#musk {
+        			max-width: 618px;
+        		}
+
+        		#ca {
+					border: solid 2px #920104;
+  				    color: #ffcac3;
+    				border-radius: 8px;
+    				margin-top: 36px;
+    				background: #080808;
+    				padding-block: 10px;
+    				display: flex;
+    				max-width: 489px;
+    				font-size: 18px;
+    				flex-direction: column;
+    				align-items: center;
+
+        		}
+
+        		a {
+        			background: #920104;
+        			border-radius: 100%;
+        			width: 60px;
+        			height: 60px;
+        			display: flex;
+        			align-items: center;
+        			flex-direction: column;
+        			justify-content: center;
+        			text-decoration: none;
+        			font-size: 24px;
+        			color: #fff;
+        			margin-inline: 10px;
+        			box-shadow: 0px 0px 27.8px rgba(255, 0, 0, 0.6); /* ombre de boîte */
+        		}
+
+        		#links{
+        			display: flex;
+        			flex-direction: row;
+        		}
+
+        		.img {
+        			margin-left: 60px;
+        		}
+
+        		.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip.clicked .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+button {
+	font-size: 20px;
+	background: #C02620;
+	padding-block: 15px;
+	padding-inline: 30px;
+	font-weight: 700;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 0.5s;
+	margin-top: 30px;
+	font-family: "corleone_dueregular";
+	font-weight: 500;
+}
+
+button:hover {
+background: #A00000;
+}
+
+@media screen and (max-width: 800px) {
+#ca {
+	display: none;
+    }
+
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+}
+
+.img {
+    margin: 0;
+    margin-top: 20px;
+}
+
+#corleon {
+	max-width: 300px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-top: 60px;
+    margin-inline: 15px;
+}
+
+}
+
+@media screen and (min-width: 800px) {
+
+.bouton {
+	display: none;
+    }
+
+
+
+}
